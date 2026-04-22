@@ -1,0 +1,14 @@
+:root {
+  --forest-green: rgb(43, 85, 91);
+  --primary-forest: #123333;
+  --forest-300: #bec9c9;
+  --sun-200: #FFF4CC;
+  --sun-500: #FFD233;
+  --sun-500-light: rgba(255, 210, 51, 0.4);
+  --light-grey: rgb(251, 248, 242);
+  --beige: rgb(255, 255, 227);
+  --light: #f2f4ec;
+  --accent: #b8c293;
+  --dark: #2c2f22;
+  --black: #1a1b18;
+}

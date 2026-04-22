@@ -1,0 +1,42 @@
+#about {
+
+  ul {
+    margin-top: 0;    
+  }
+
+  [container] {
+    display: flex;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;;
+    }
+
+    > div {
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+      @media screen and (max-width: 900px) {
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  > div:not([container]) {
+    margin-bottom: 2rem;
+    @media screen and (max-width: 900px) {
+      margin-bottom: 0;
+    }
+    
+  }
+
+  [experience] {
+    border-right: 1px solid var(--sun-500-light);
+    @media screen and (max-width: 900px) {
+      border-right: none;
+    }
+
+    p {
+      margin: 0 0 3px;
+    }
+  }
+  
+}

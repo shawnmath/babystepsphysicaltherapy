@@ -1,0 +1,16 @@
+#services {
+
+  [conditions] {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+}

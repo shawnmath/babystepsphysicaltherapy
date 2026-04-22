@@ -1,0 +1,36 @@
+#contact {
+
+  > div {
+    display: flex;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;;
+    }
+  }
+
+  section {
+    padding: 0 1rem;
+    @media screen and (max-width: 900px) {
+      padding: 0;
+    }
+
+    &:first-of-type {
+      border-right: 1px solid var(--sun-500-light);
+      @media screen and (max-width: 900px) {
+        border-right: none;
+      }
+    }
+    
+    p {
+      margin-top: 0;
+    }
+  }
+
+  [contact-method]:first-child {
+    margin-bottom: 2rem;    
+  }
+
+  a {
+    color: var(--primary-forest);
+    text-decoration: none;
+  }
+}

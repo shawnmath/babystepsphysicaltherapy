@@ -1,0 +1,51 @@
+#testimonials {  
+
+  [quotes] {
+
+    [quote] {
+      max-width: 600px;
+      margin: 0 auto;
+      
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+
+      p {
+        margin: 0;
+
+        &:not([author]) {
+          font-style: italic;
+        }
+      }
+
+      blockquote {
+        flex: 1;
+        margin: 0;        
+
+        p {
+          
+          &::before {
+            content: "\201C";
+            font-family: 'Outfit-SemiBold';
+            color: var(--primary-forest);
+          } 
+    
+          &::after {
+            content: "\201D";
+            font-family: 'Outfit-SemiBold';
+            color: var(--primary-forest);
+          }
+        }
+      }
+
+      [author] {
+        font-family: 'Outfit-SemiBold';
+        font-size: 1rem;
+        text-align: right;
+      }
+      
+    }
+  }
+  
+}
+

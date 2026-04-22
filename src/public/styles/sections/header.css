@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  [intro] {
+    max-width: clamp(16rem, 600px, 600px);
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    border: 3px dashed var(--sun-500);
+    transform: rotate(5deg);
+    @media screen and (max-width: 900px) {
+      transform: none;
+      margin: 0 auto;
+    }
+  }
+}
