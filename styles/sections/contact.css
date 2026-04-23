@@ -14,6 +14,7 @@
     }
 
     &:first-of-type {
+      flex: 1;
       border-right: 1px solid var(--sun-500-light);
       @media screen and (max-width: 900px) {
         border-right: none;
@@ -31,6 +32,6 @@
 
   a {
     color: var(--primary-forest);
-    text-decoration: none;
+    overflow-wrap: anywhere;
   }
 }

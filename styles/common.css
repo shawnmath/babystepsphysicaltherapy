@@ -18,7 +18,8 @@ main {
 }
 
 main > section, [section] {
-  padding: clamp(10px, 5vw, 20px) clamp(2rem, 7vw, 7vw);  
+  /* padding: clamp(10px, 5vw, 20px) clamp(1rem, 7vw, 7vw); */
+  padding: clamp(10px, 5vw, 20px) clamp(1rem, 5vw, 7vw);  
 }
 
 [headline] {
@@ -26,24 +27,12 @@ main > section, [section] {
 }
 
 [underline] {
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 5px;
-    background-color: var(--sun-500);
-  }
+  text-decoration: underline;
+  text-decoration-color: var(--sun-500);
+  text-decoration-thickness: 5px;
 
   &[thin] {
-
-    &:after {
-      height: 2px;
-    }    
+    text-decoration-thickness: 2px;
   }
 }
 

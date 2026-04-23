@@ -7,11 +7,12 @@ header {
   }
 
   [intro] {
-    max-width: clamp(16rem, 600px, 600px);
+    max-width: 100%;
   }
 
-  img {
-    width: 300px;
+  img {    
+    max-width: 300px;
+    width: 100%;
     height: 300px;
     border: 3px dashed var(--sun-500);
     transform: rotate(5deg);
