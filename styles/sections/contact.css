@@ -7,14 +7,14 @@
     }
   }
 
-  section {
-    padding: 0 1rem;
+  section {    
     @media screen and (max-width: 900px) {
       padding: 0;
     }
 
     &:first-of-type {
       flex: 1;
+      padding: 0 1rem 0 0;
       border-right: 1px solid var(--sun-500-light);
       @media screen and (max-width: 900px) {
         border-right: none;
@@ -23,6 +23,7 @@
 
     &:nth-child(2) {
       flex: 0.5;
+      padding: 0 0 0 1rem;
     }
     
     p {
