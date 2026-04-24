@@ -18,7 +18,6 @@ main {
 }
 
 main > section, [section] {
-  /* padding: clamp(10px, 5vw, 20px) clamp(1rem, 7vw, 7vw); */
   padding: clamp(10px, 5vw, 20px) clamp(1rem, 5vw, 7vw);  
 }
 
