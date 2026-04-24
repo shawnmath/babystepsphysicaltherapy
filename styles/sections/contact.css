@@ -20,6 +20,10 @@
         border-right: none;
       }
     }
+
+    &:nth-child(2) {
+      flex: 0.5;
+    }
     
     p {
       margin-top: 0;
