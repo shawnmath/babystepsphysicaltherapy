@@ -1,21 +1,9 @@
 footer {  
+  padding: clamp(10px, 5vw, 20px) 0;
   margin-top: 15vh;
   color: #fff;
   background-color: var(--primary-forest);  
-
-  > div {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-  }
+  text-align: center;
 
   p {
     margin: 0;

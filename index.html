@@ -12,20 +12,23 @@
     <link rel='preload' href='./assets/fonts/Outfit/Outfit-SemiBold.ttf' as='font' type='font/ttf'>
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>    
-    <nav section role='navigation'>
-      <div companyName>
-        <h2>Baby Steps</h2>
-        <p>Pediatric Physical Therapy</p>
+  <body>
+    <nav role='navigation'>
+      <div section>
+        <a href='/' companyName>
+          <h2>Baby Steps</h2>
+          <p>Pediatric Physical Therapy</p>
+        </a>
+        <button data-font="os" toggle aria-expanded='false'>MENU</button>
+        <ul>
+          <li><a href='#services'>Services</a></li>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#pricing'>Pricing & Insurance</a></li>
+          <li><a href='#contact'>Contact</a></li>
+        </ul>
       </div>
-      <button data-font="os" toggle aria-expanded='false'>MENU</button>
-      <ul>
-        <li><a href='#services'>Services</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#pricing'>Pricing & Insurance</a></li>
-        <li><a href='#contact'>Contact</a></li>
-      </ul>
     </nav>
+
     <main>
       <header section>
         <div intro>
@@ -52,8 +55,9 @@
           individualized, functional treatment plans.
         </p>
         <p>
-          I am available for <span underline thin>telehealth</span> (video, phone, email) consultations 
-          and <span underline thin>in-home care</span>.</p>
+          I am available for both <span underline thin>telehealth</span> (video, phone, email) consultations 
+          and <span underline thin>in-home care</span> in Montgomery County, Maryland
+          and surrounding counties.</p>
         <p data-font='os'>Common conditions I treat:</p>
         <div conditions>          
           <ul>
@@ -215,8 +219,7 @@
           <p subtitle>Many plans offer out-of-network benefits. I recommend contacting your provider to understand your specific coverage. I am happy to provide the documentation you’ll need.</p>
           <h3 title>Why don’t you accept insurance?</h3>
           <p subtitle>By operating outside of insurance, I am able to spend more time with you, avoid unnecessary restrictions, and focus entirely on your goals and results.</p>
-        </div>
-        
+        </div>        
       </section>
       <section id='contact'>
         <h2 headline>Contact</h2>
@@ -243,10 +246,8 @@
       </section>      
     </main>
     <footer>
-      <div section>
-        <p>Baby Steps Pediatric Physical Therapy</p>
-        <p>Licensed in Maryland, Virginia & Washington D.C.</p>
-      </div>      
+      <p>Baby Steps Pediatric Physical Therapy</p>
+      <p>Serving Montgomery County, Maryland and surrounding counties.</p>
     </footer>
     <script src='./assets/js/main.js' type='module'></script>
   </body>

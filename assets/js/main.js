@@ -1,6 +1,6 @@
 (function() {
   const menu = document.querySelector('nav ul')
-  const menuToggle = document.querySelector('nav button')  
+  const menuToggle = document.querySelector('nav button')
 
   menuToggle.addEventListener('click', function() {    
     const expanded = this.getAttribute('aria-expanded')
@@ -8,7 +8,7 @@
     this.setAttribute('aria-expanded', ariaVal)
 
     if (expanded === 'false') {
-      menu.style.display = 'block'
+      menu.style.display = 'flex'
     } else {
       menu.style.display = 'none'
     }    
@@ -21,5 +21,18 @@
         menu.style.display = 'none'
       }
     }    
+  })
+
+  const resetMenu = () => {
+    if (window.innerWidth > 767) {
+      menu.style.display = 'flex'
+      menuToggle.setAttribute('aria-expanded', 'false')
+    }
+  }
+
+  let timeout
+  window.addEventListener('resize', function(e) {
+    clearTimeout(timeout)
+    timeout = setTimeout(resetMenu, 150)
   })
 })()

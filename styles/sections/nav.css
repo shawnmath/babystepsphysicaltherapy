@@ -1,17 +1,22 @@
 nav {
-  --padding-x: clamp(1rem, 5vw, 7vw);
-  --padding-y: clamp(10px, 5vw, 20px);
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1300px;
-  margin: 0 auto;
-  @media screen and (max-width: 500px) {
-    flex-direction: column;
-    gap: 1rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--primary-forest);
+  color: #fff;
+
+  > div[section] {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: var(--padding-x-small);
+    padding-bottom: var(--padding-x-small);
   }
 
   [companyName] {
+    color: #fff;
+    text-decoration: none;
     
     > * {
       margin: 0;
@@ -29,45 +34,38 @@ nav {
   [toggle] { 
     position: absolute;
     right: var(--padding-x);
-    top: calc(var(--padding-y) + 3px);
-    transform: translateY(calc(50% - 3px));
+    top: 50%;
+    transform: translateY(-50%);
     display: none;
+    border: 2px solid var(--primary-forest);
     border-radius: 4px;
     appearance: none;    
     background: none;    
-    color: var(--primary-forest);
+    color: #fff;
     @media screen and (max-width: 767px) {
       display: block;
     }
-
-    /* &:active,
-    &:focus {
-
-      & + ul {
-        display: block;
-      }
-    } */
   }
 
   ul {
     display: flex;
+    align-self: center;
     gap: 2rem;
     margin: 0;
     padding: 0;
     list-style-type: none;
     @media screen and (max-width: 767px) {
       position: absolute;
-      right: var(--padding-x);
-      top: calc(100% - var(--padding-y));
+      top: 100%;
+      left: 0;
       display: none;
+      gap: 1rem;
+      width: 100%;      
       flex-direction: column;
       padding: 1rem;
+      text-align: center;
       background-color: var(--primary-forest);
       color: #fff;
-
-      li {
-        margin-bottom: 1rem;
-      }
     }
 
     a {      

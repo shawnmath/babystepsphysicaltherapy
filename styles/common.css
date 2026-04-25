@@ -1,6 +1,9 @@
 * {
+  --padding-x: clamp(1rem, 5vw, 7vw);
+  --padding-x-small: 0.5rem;
+  --padding-y: clamp(10px, 5vw, 20px);
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 body {
@@ -13,12 +16,20 @@ body {
 }
 
 main {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-top: 100px;
+  @media screen and (max-width: 767px) {
+    padding-top: 75px;
+  }
 }
 
 main > section, [section] {
   padding: clamp(10px, 5vw, 20px) clamp(1rem, 5vw, 7vw);  
+}
+
+section {
+  scroll-margin-top: 80px;
 }
 
 [headline] {
