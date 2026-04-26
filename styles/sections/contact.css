@@ -3,7 +3,10 @@
   > div {
     display: flex;
     @media screen and (max-width: 900px) {
-      flex-direction: column;;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) and (max-width: 899px) {
+      gap: 2rem;
     }
   }
 
@@ -14,16 +17,36 @@
 
     &:first-of-type {
       flex: 1;
+      display: flex;
       padding: 0 1rem 0 0;
       border-right: 1px solid var(--sun-500-light);
       @media screen and (max-width: 900px) {
         border-right: none;
       }
+      @media screen and (max-width: 675px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      img {
+        align-self: flex-start;
+        width: 100%;
+        max-width: 200px;
+        margin-right: 2rem;
+        border: 3px dashed var(--sun-500);
+        transform: rotate(-5deg);
+        @media screen and (max-width: 675px) {
+          align-self: center;
+          transform: none;
+        }
+      }
     }
 
     &:nth-child(2) {
       flex: 0.5;
-      padding: 0 0 0 1rem;
+      @media screen and (min-width: 901px) {
+        padding: 0 0 0 1rem;  
+      }      
     }
     
     p {

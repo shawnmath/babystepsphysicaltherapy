@@ -16,14 +16,21 @@ nav {
 
   [companyName] {
     color: #fff;
-    text-decoration: none;
-    
+    text-decoration: none;    
+
     > * {
       margin: 0;
+    }
 
-      &:first-child {
-        margin-bottom: 3px;
-      }
+    h2 {
+      display: inline-block;
+      margin-bottom: 3px;
+      font-family: 'Crayon';
+    }
+
+    svg {
+      vertical-align: sub;
+      fill: #fff;
     }
 
     p {

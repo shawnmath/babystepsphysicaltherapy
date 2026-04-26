@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Crayon';
+  src: url('../assets/fonts/Crayon/DkCoolCrayon.ttf') format('truetype');
+  font-weight: 300;  
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Switzer-Light';
   src: url('../assets/fonts/Switzer/Switzer-Light.woff2') format('woff2'),
        url('../assets/fonts/Switzer/Switzer-Light.woff') format('woff'),
