@@ -75,6 +75,10 @@ nav {
       color: #fff;
     }
 
+    &.active {
+      display: flex;
+    }
+
     a {      
       position: relative;
       display: block;      
