@@ -38,6 +38,7 @@
         @media screen and (max-width: 675px) {
           align-self: center;
           transform: none;
+          margin-right: 0;
         }
       }
     }
