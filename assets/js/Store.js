@@ -10,6 +10,11 @@ const Store = {
 }
 
 const proxiedStore = new Proxy(Store, {
+  get(target, prop, receiver) {
+    if (prop === 'menuActive') return target.menuActive
+    if (prop === 'menu') return target.menu
+    if (prop === 'menuToggle') return target.menuToggle
+  },
   set(target, property, value) {
     target[property] = value
     if (property === 'menuActive') {
@@ -20,4 +25,3 @@ const proxiedStore = new Proxy(Store, {
 })
 
 export default proxiedStore
-export const {menu, menuToggle} = Store
